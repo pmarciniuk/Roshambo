@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stone, scissors, paper game</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather:300,400,700" rel="stylesheet">
+            
+</head>
+<body>
+    
+    <main class="app-container">
+        
+        <section class="start-section">
+            
+            <h1 class="heading-primary">
+                 <svg class="logo">
+                    <use xlink:href="img/sprite.svg#icon-scissors"></use>
+                </svg>
+            </h1>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__list-item menu__list-item--1 play">
+                        <a href="#" class="menu__link menu__link--1">01 Play now</a>
+                    </li>
+                    <li class="menu__list-item menu__list-item--2 guide">
+                        <a href="#" class="menu__link menu__link--2">02 How to</a>
+                    </li>
+                </ul>
+            </nav>
+            <p class="legal">All rights reserved &copy; 2017</p>
+            
+        </section>
+        
+        <section class="game-section">
+            
+           <div class="user">
+                <ul class="user__nav">
+                    <li class="user__nav-item user__nav-item--1">
+                        <svg class="user__nav-icon">
+                            <use xlink:href="img/sprite.svg#icon-earth"></use>
+                        </svg>
+                    </li>
+                    <li class="user__nav-item user__nav-item--2">
+                        <svg class="user__nav-icon">
+                            <use xlink:href="img/sprite.svg#icon-scissors"></use>
+                        </svg>
+                    </li>
+                    <li class="user__nav-item user__nav-item--3">
+                        <svg class="user__nav-icon">
+                            <use xlink:href="img/sprite.svg#icon-files-empty"></use>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+            
+            
+            <div class="game">
+                
+                <h2 class="game__heading">You win!</h2>
+                <div class="arena">
+                    
+                   <figure class="arena__player">
+                        <svg class="arena__icon">
+                            <use xlink:href="img/sprite.svg#icon-files-empty"></use>
+                        </svg>
+                        <figurecaption class="arena__player-name">
+                            Player
+                        </figurecaption>
+                    </figure>
+                    
+                    <div class="arena__split">
+                        vs
+                    </div>
+                    
+                    <figure class="arena__player">
+                        <svg class="arena__icon arena__icon--enemy">
+                            <use xlink:href="img/sprite.svg#icon-scissors"></use>
+                        </svg>
+                        <figurecaption class="arena__player-name arena__player-name--enemy">
+                            Enemy
+                        </figurecaption>
+                    </figure>
+                </div>
+                
+                <blockquoute class="quote">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maxime eos soluta quo maiores animi!
+                </blockquoute>
+                
+                <footer class="game__footer">
+                    
+                    <div class="game__result-box">
+                        <span class="game__result">
+                            Result
+                        </span>
+                        <span class="game__result-player">03</span>
+                        <span class="game__result-enemy">05</span>
+                    </div>
+                    <a href="#" class="btn-start exit">
+                        Exit
+                    </a>
+                    <a href="#" class="btn-start start">
+                        Start
+                    </a>
+                    
+                </footer>
+            </div>
+        </section>
+        
+               
+                
+        <!--  HOW TO SECTION  -->
+        
+        
+        <section class="guide-section">
+                
+                <a href="#" class="guide-section__close close">
+                    x
+                </a>
+                
+                <div class="guide-box">
+                    
+                    <h2 class="guide-box__heading">Rules</h2>
+                    <p class="guide-box__text"> The idea is that both players have an equal chance of winning, making the game random but fair.</p>
+                    <p class="guide-box__text"> A person who decides to play rock will beat another player who has chosen scissors ("rock crushes scissors"), but will lose to one who has played paper ("paper covers rock"); a play of paper will lose to a play of scissors ("scissors cut[s] paper").</p>
+                    <p class="guide-box__wish">Good luck!</p>
+                
+                </div>
+                
+                
+                
+     
+        </section>
+        
+        
+    </main>
+    
+</body>
+</html>

@@ -14,7 +14,7 @@
     
     <main class="app-container">
         
-        <section class="start-section">
+        <section class="start-section start-section__active">
             
             <h1 class="heading-primary">
                  <svg class="logo">
@@ -37,19 +37,19 @@
         
         <section class="game-section">
             
-           <div class="user">
+           <div class="user"> 
                 <ul class="user__nav">
-                    <li class="user__nav-item user__nav-item--1">
+                    <li class="user__nav-item user__nav-item--1" data-name="rock">
                         <svg class="user__nav-icon">
                             <use xlink:href="img/sprite.svg#icon-earth"></use>
                         </svg>
                     </li>
-                    <li class="user__nav-item user__nav-item--2">
+                    <li class="user__nav-item user__nav-item--2" data-name="scissors">
                         <svg class="user__nav-icon">
                             <use xlink:href="img/sprite.svg#icon-scissors"></use>
                         </svg>
                     </li>
-                    <li class="user__nav-item user__nav-item--3">
+                    <li class="user__nav-item user__nav-item--3" data-name="paper">
                         <svg class="user__nav-icon">
                             <use xlink:href="img/sprite.svg#icon-files-empty"></use>
                         </svg>
@@ -63,8 +63,14 @@
                 <h2 class="game__heading">You win!</h2>
                 <div class="arena">
                     
-                   <figure class="arena__player">
-                        <svg class="arena__icon">
+                   <figure class="arena__player player">
+                        <svg class="arena__icon rock">
+                            <use xlink:href="img/sprite.svg#icon-earth"></use>
+                        </svg>
+                        <svg class="arena__icon scissors">
+                            <use xlink:href="img/sprite.svg#icon-scissors"></use>
+                        </svg>
+                        <svg class="arena__icon paper">
                             <use xlink:href="img/sprite.svg#icon-files-empty"></use>
                         </svg>
                         <figurecaption class="arena__player-name">
@@ -76,9 +82,15 @@
                         vs
                     </div>
                     
-                    <figure class="arena__player">
-                        <svg class="arena__icon arena__icon--enemy">
+                    <figure class="arena__player computer">
+                        <svg class="arena__icon rock">
+                            <use xlink:href="img/sprite.svg#icon-earth"></use>
+                        </svg>
+                        <svg class="arena__icon scissors">
                             <use xlink:href="img/sprite.svg#icon-scissors"></use>
+                        </svg>
+                        <svg class="arena__icon paper">
+                            <use xlink:href="img/sprite.svg#icon-files-empty"></use>
                         </svg>
                         <figurecaption class="arena__player-name arena__player-name--enemy">
                             Enemy
@@ -99,6 +111,7 @@
                         <span class="game__result-player">03</span>
                         <span class="game__result-enemy">05</span>
                     </div>
+                    <p class="alert">Choose your figure!</p>
                     <a href="#" class="btn-start exit">
                         Exit
                     </a>
@@ -137,6 +150,6 @@
         
         
     </main>
-    
+    <script src="js/index.js"></script>
 </body>
 </html>
